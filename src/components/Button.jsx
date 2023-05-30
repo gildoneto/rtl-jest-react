@@ -1,4 +1,5 @@
 import { useState } from "react"
+import styles from './Button.module.css'
 
 const Button = () => {
 
@@ -7,6 +8,7 @@ const Button = () => {
 
   return <button 
     onClick={() => setButtonColor(newButtonColor)}
+    className={styles.button}
     style={{backgroundColor: buttonColor}}
     >
       Change to {newButtonColor}

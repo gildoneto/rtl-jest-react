@@ -4,16 +4,18 @@ import Footer from './components/Footer';
 
 import './App.css';
 
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Header>
-        Header
+        <Link className='like-button' to='/'>Header</Link>
         <Navbar />
       </Header>
-      <Outlet />
+      <main>
+        <Outlet/>
+      </main>
       <Footer>FOOTER</Footer>
     </div>
     

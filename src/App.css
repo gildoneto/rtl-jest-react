@@ -1,12 +1,47 @@
-header, nav {
+header, nav, footer {
   display: flex;
   gap: 10px;
 }
 
-header {
+header, footer {
   padding: 1em;
-  min-height: 3em;
-  background-color: brown;
-  color: rgb(215, 161, 95);
+  background-color: #3e0909; /* #751b1b */
+  color: #f6cf81;
   justify-content: space-between;
 }
+
+header {
+  height: 10dvh;
+}
+
+footer {
+  height: 20dvh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70dvh;
+  background-color: #651313;  /* #a52a2a */
+  color: #f8d796;
+}
+
+.like-button {
+  width: 5em;
+  height: 2em;
+  border: 0.5px solid rgb(215, 161, 95);
+  border-radius: 0.3em;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #f6cf81;
+  text-decoration: none;
+  text-align: center;
+}
+
+.like-button:hover {
+  font-weight: 700;
+  color: rgb(224, 170, 105);
+}
+
