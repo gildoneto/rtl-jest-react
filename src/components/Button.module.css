@@ -3,7 +3,8 @@
   color: inherit;
   font-weight: 700;
   text-transform: uppercase;
-  width: 12em;
+  min-width: 12em;
+  width: fit-content;
   height: 4em;
   cursor: pointer;
   border-radius: 0.3em;
@@ -11,7 +12,7 @@
 
 .button:hover{
   filter: brightness(120%);
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .button:active {

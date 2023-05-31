@@ -3,8 +3,8 @@ import styles from './Button.module.css'
 
 const Button = () => {
 
-  const [buttonColor, setButtonColor] = useState('red');
-  const newButtonColor = buttonColor === 'red' ? 'blue' : 'red';
+  const [buttonColor, setButtonColor] = useState('darkred');
+  const newButtonColor = buttonColor === 'darkred' ? 'black' : 'darkred';
 
   return <button 
     onClick={() => setButtonColor(newButtonColor)}
